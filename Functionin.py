@@ -161,3 +161,38 @@
 #decorator()
 #generator()
 #lamda()
+
+
+#pthon tutor google platform 
+
+####### Decorator :------>>>>>
+#decorator ak spatial higer order function hai jo kisi v function ka internal behaviour change karta hai ,, 
+#mtlb ye kisi bhi function ke andr ke code ko bina change kiye huye uska behaviour badal dena decorator kahlata hain  
+
+#decorator ak spatial higer order function hai jo ki ak function return karta hai or as a argunment bhi wo function pass karta hai 
+#      or as a perameter wo function hi accept karta hai ,,,,
+
+# python me decorator ko ham @ se represent karte hai,,,
+
+####  SYNTEX---->>>>
+              
+              #def outer_fun(fun_name):
+                    #def inner.fun():
+                          #fun_name()
+                    #return inner.fun       #   function name return karna hai
+                 
+              #x=outer_fun(fun_name)
+              #x()
+
+
+# def outer_fun(a):
+#     def inner_fun(x):
+#         x=x+5           #(modification)
+#         return x
+#     return inner_fun
+# def add(a,b):
+#     return a+b
+# x=outer_fun(add)           ## function pass ,,
+# print(x)
+# z=x(4,5)
+# print(z)

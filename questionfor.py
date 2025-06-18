@@ -1,4 +1,6 @@
-  ########## Factor of any number ##########
+#ord function cherecter ko asky value me convert karta hai----->>>  
+
+########## Factor of any number ##########
 # n=int(input("Enter the number "))
 # for i in range(1,n+1):
 #     if n%i==0:
@@ -76,5 +78,55 @@
 #     print("pallindrom")
 # else:
 #     print("not a pallindrom")
+
+######### Swaap first and last string value------------>>>>>>>>>>>
+# s='python'
+# l=list(s)
+# l[0],l[-1]=l[-1],l[0]
+# print(l)
+# s=''.join(l)
+# print(s)
+
+########### Swaap first and last integer value------------>>>>>>>>>>>
+
+# n=12345
+# s=str(n)
+# l=list(s)
+# l[0],l[-1]=l[-1],l[0]
+# print(l)
+# s=''.join(l)
+# n=int(s)0
+# print(n)
+
+
+######### Move all zeros al the last posigition---------->>>>>>>>>>>
+# l=[2,0,1,0,3,0,7,0,5]
+# l1=[]
+# for i in l:
+#     if i!=0:
+#         l1.append(i)
+# n=len(l)-len(l1)
+# for _ in range(n):
+#     l1.append(0)
+# print(l1)
+
+
+
+############ total even number to start of this list and total odd number end of list---------->>>>>
+
+# l=[1,2,3,4,5,6,7,8,9,10]
+# l1=[]
+# for i in l:
+#     if i%2==0:
+#         l1.append(i)
+# # n=len(l)-len(l1)
+# for i in l:
+#     if i%2!=0:
+#         l1.append(i)
+# print(l1)
+
+
+
+########## Find factor sum ---------->>>>>>>>>>
 
 
