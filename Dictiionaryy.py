@@ -19,16 +19,16 @@
 
 #nested dictonary creat,,,,
 
-# student = {
-#     "name":"raja",
-#     "Age" : 22,
-#     "subject" : {
-#           "phy":45,
-#           "che":65,
-#           "maths":58,
-#     }
-# }
-# print(student["subject"]["che"])
+student = {
+    "name":"raja",
+    "Age" : 22,
+    "subject" : {
+          "phy":45,
+          "che":65,
+          "maths":58,
+    }
+}
+print(student["subject"]["che"])
 
 
 #Dictionary Methods---->>>
@@ -40,12 +40,12 @@
 
 
 
-info = {
-    "name":"raja raghuwanshi",
-    "Age" : 22,
-    "subject":["python","c++","java"],
-}
-print(info.keys())
+# info = {
+#     "name":"raja raghuwanshi",
+#     "Age" : 22,
+#     "subject":["python","c++","java"],
+# }
+# print(info.keys(5))
 
 
 

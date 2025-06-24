@@ -80,12 +80,12 @@
 #     print("not a pallindrom")
 
 ######### Swaap first and last string value------------>>>>>>>>>>>
-# s='python'
-# l=list(s)
-# l[0],l[-1]=l[-1],l[0]
-# print(l)
-# s=''.join(l)
-# print(s)
+s='python'
+l=list(s)
+l[0],l[-1]=l[-1],l[0]
+print(l)
+s=''.join(l)
+print(s)
 
 ########### Swaap first and last integer value------------>>>>>>>>>>>
 
@@ -106,7 +106,7 @@
 #     if i!=0:
 #         l1.append(i)
 # n=len(l)-len(l1)
-# for _ in range(n):
+# for i in range(n):
 #     l1.append(0)
 # print(l1)
 
@@ -130,3 +130,12 @@
 ########## Find factor sum ---------->>>>>>>>>>
 
 
+l=[1,2,5,0,6,0,4,0,2,0,4,0,5,0]
+l1=[]
+for i in l:
+    if i!=0:
+        l1.append(i)
+n=len(l)-len(l1)
+for i in range(n):
+    l1.append(0)
+print(l1)

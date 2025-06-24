@@ -196,3 +196,12 @@
 # print(x)
 # z=x(4,5)
 # print(z)
+
+
+# def even_odd(fun):
+#     if fun%2==0:
+#         print("even number")
+#     else:
+#         print("odd number")
+#         return fun
+# even_odd(6)
