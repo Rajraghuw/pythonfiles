@@ -211,15 +211,31 @@
 # print("Sum of first", n, "Even numbers is:", sum)
 
 
+
+# n = int(input("Enter the number: "))
+# i=1
+# sum=0
+# while(i <= n):
+#     sum=sum+(2*i)
+#     if i<n:
+#         print(i*2, end='+')
+#     else:
+#         print(i*2, end='=')
+#     i+=1
+# print(sum)
+    
+ ########### Print Sum of N Odd Number #########
+
 n = int(input("Enter the number: "))
 i=1
 sum=0
 while(i <= n):
-    sum=sum+(2*i)
+    sum=sum+((2*i)-1)
     if i<n:
-        print(i*2, end='+')
+        print((i*2)-1, end='+ ')
     else:
-        print(i*2, end='=')
+        print((i*2)-1, end=' = ')
     i+=1
-print(sum)
-    
+print (sum)
+
+

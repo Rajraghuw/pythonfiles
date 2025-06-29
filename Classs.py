@@ -10,12 +10,12 @@
         # variable  (properties) (jitni cheeje dikhai de rhi hai wo variable )
           # method   (behaviour)
 
-# class first :
+# class First :
 #     pass
-# print(id(first))
-# obj=first
+# print(id(First))
+# obj=First
 # print(id(obj))
-# obj1=first()
+# obj1=First()
 # print(id(obj1))
 
 
@@ -209,22 +209,129 @@
 
 
 
-class Perent:    # inharitence kiya hai code resubilty bolte hai ise
-    x=10
-    def __init__(self,name):
-        self.name=name
-    def home(self):
-        print("home from perent class")
-class Child1(Perent):     # yha pr perent class inheridence hai ,,,,
-    # pass
-    def home(self):
-        print("home from perent class")     #methoud overiding sem name ki do methoud python supported 
-        super().home()     # super ka use ham perent ke functions ko acces karne ke liye karte hai 
-class Child2(Perent):
-    pass
+# class Perent:    # inharitence kiya hai code resubilty bolte hai ise
+#     x=10
+#     def __init__(self,name):
+#         self.name=name
+#     def home(self):
+#         print("home from perent class")
+# class Child1(Perent):     # yha pr perent class inheridence hai ,,,,
+#     # pass
+#     def home(self):
+#         print("home from perent class")     #methoud overiding sem name ki do methoud python supported 
+#         super().home()     # super ka use ham perent ke functions ko acces karne ke liye karte hai 
+# class Child2(Perent):
+#     pass
 
-obj1=Child1('python')
-obj2=Child2('java')  
-obj1.home()
-obj2.home()
-print(obj1.x,obj2.x)
+# obj1=Child1('python')
+# obj2=Child2('java')  
+# obj1.home()
+# obj2.home()
+# print(obj1.x,obj2.x)
+
+
+
+# class Student:
+#     def __init__(self,fullname,marks):
+#         self.name=fullname
+#         self.marks=marks
+#         print("this is student class")
+# s1=Student("raja raghuwanshi", 90)
+# print(s1.name,s1.marks)
+# s2=Student("sourabh joshi", 95)
+# print(s2.name,s2.marks)
+
+
+## Creat student class that takes name & marks 3 subject as argouments in constructor then creat a methoud to print the average  ### 
+
+# class Student:
+#     def __init__(self,name,marks):
+#         self.name=name
+#         self.marks=marks
+#     def average(self):
+#         sum=0
+#         for i in self.marks:
+#             sum+=i
+#         print("hy",self.name,"your average is",sum/len(self.marks))
+
+# s1=Student("raja raghuwanshi", [90, 80, 70])
+# s1.average()
+
+
+#### use @staticmethoud decorator ####
+
+# class Student:
+#     def __init__(self,name,marks):
+#         self.name=name
+#         self.marks=marks
+#     @staticmethod
+#     def hellow():
+#         print("hellow")
+
+#     def average(self):
+#         sum=0
+#         for i in self.marks:
+#             sum+=i
+#         print("hy",self.name,"your average is",sum/len(self.marks))
+
+# s1=Student("raja raghuwanshi", [90, 80, 70])
+# s1.average()
+# s1.hellow()  # static methoud ko class ke name se call karte hai
+        
+        
+# ######private attribute and method #####
+
+# class Account():
+#     def __init__(self,account,password):
+#         self.account=account
+#         self.__password=password  # private attribute represented by __
+
+# s1=Account("raja", "1234")
+# print(s1.account)
+# print(s1.__password)  # this will give an error because __password is private
+
+
+
+###### inheritance methoud #####
+
+# class car:
+#     @staticmethod
+#     def start():
+#         print("car is started")
+#     @staticmethod
+#     def stop():
+#         print("car is stopped")
+
+# class toyota(car):
+#     def __init__(self, name):
+#         self.name=name
+
+# s1=toyota("fortuner")
+# s2=toyota("innova")
+
+# print(s1.start())
+
+
+#### multi level inheritance #####
+
+class car:
+    @staticmethod
+    def start():
+        print("car is started")
+    @staticmethod
+    def stop():
+        print("car is stopped")
+
+class toyota(car):
+    def __init__(self, brand):
+        self.brand=brand
+
+class fortuner(toyota):
+    def __init__(self, type):
+        self.type=type
+        super().stop()  # super() function calling parent class method
+        
+s1=fortuner("diesel")
+s1.start()  # calling parent class method
+print(s1.type)
+

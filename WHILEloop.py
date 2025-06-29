@@ -95,17 +95,17 @@
 
                      ########### Print Sum of N Even Number #########
 
-num=int(input("Enter the number : "))
-i=1
-sum=0
-while (i<=num):
-    sum=sum+(2*i) 
-    if i<num:
-      print(2*i,end=' + ')
-    else :
-      print(2*i,end=" = ")  
-    i=i+1
-print(sum)
+# num=int(input("Enter the number : "))
+# i=1
+# sum=0
+# while (i<=num):
+#     sum=sum+(2*i) 
+#     if i<num:
+#       print(2*i,end=' + ')
+#     else :
+#       print(2*i,end=" = ")  
+#     i=i+1
+# print(sum)
 
      ######### Print the even number from 1 to n ##############
 
@@ -170,7 +170,7 @@ print(sum)
 #         if i%2==0:
 #           print(i-1,end=",")
 #     else:
-#       print(i-1,end=" ")
+#       print(i,end=" ")
 #     i=i+1  
 
      ######### Print the SUM of Odd number from 1 to n ##############
