@@ -80,12 +80,12 @@
 #     print("not a pallindrom")
 
 ######### Swaap first and last string value------------>>>>>>>>>>>
-s='python'
-l=list(s)
-l[0],l[-1]=l[-1],l[0]
-print(l)
-s=''.join(l)
-print(s)
+# s='python'
+# l=list(s)
+# l[0],l[-1]=l[-1],l[0]
+# print(l)
+# s=''.join(l)
+# print(s)
 
 ########### Swaap first and last integer value------------>>>>>>>>>>>
 
@@ -130,12 +130,96 @@ print(s)
 ########## Find factor sum ---------->>>>>>>>>>
 
 
-l=[1,2,5,0,6,0,4,0,2,0,4,0,5,0]
-l1=[]
-for i in l:
-    if i!=0:
-        l1.append(i)
-n=len(l)-len(l1)
-for i in range(n):
-    l1.append(0)
-print(l1)
+# l=[1,2,5,0,6,0,4,0,2,0,4,0,5,0]
+# l1=[]
+# for i in l:
+#     if i!=0:
+#         l1.append(i)
+# n=len(l)-len(l1)
+# for i in range(n):
+#     l1.append(0)
+# print(l1)
+
+
+  ############## Q.2  SUM of N Natural Number#########
+
+# n = int(input("Enter the number: "))
+# i=1
+# sum=0
+# while(i <= n):
+#     sum= sum + i
+#     i+=1
+# print("Sum of first", n, "natural numbers is:", sum)
+
+
+###### Q.3 Multiply N natural number ########
+
+# n = int(input("Enter the number: "))
+# i=1
+# sum=1
+# while(i <= n):
+#     sum= sum * i
+#     i+=1
+# print("multply of first", n, "natural numbers is:", sum)
+
+
+  ######### Pallindrome Number ########
+
+# n = int(input("Enter the number: "))
+# i=n
+# rv=0
+# while n > 0:
+#     last=n%10
+#     rv=rv*10+last
+#     n=n//10
+# if i==rv:
+#     print("Pallindrome Number")
+# else:
+#     print("Not a Pallindrome Number")
+
+######## 2nd way or pellendrom number ########
+
+# n = input("Enter the string: ")
+
+# x=n[::-1]
+# if n==x:
+#     print("Pallindrome string")
+# else:
+#     print("Not a Pallindrome string")
+
+######### Print the n Even Number #############
+
+# n = int(input("Enter the number: "))
+
+# i=1
+# while(i <= n):
+#     if i%2==0:
+#         print(i, end=', ')
+#     i+=1
+
+
+######### Print the sum of n Even Number #############
+
+# n = int(input("Enter the number: "))
+# i=1
+# sum=0
+# while(i <= n):
+#     if i%2==0:
+#         sum=sum+i
+#         print(i, end=', ')
+#     i+=1
+# print("Sum of first", n, "Even numbers is:", sum)
+
+
+n = int(input("Enter the number: "))
+i=1
+sum=0
+while(i <= n):
+    sum=sum+(2*i)
+    if i<n:
+        print(i*2, end='+')
+    else:
+        print(i*2, end='=')
+    i+=1
+print(sum)
+    

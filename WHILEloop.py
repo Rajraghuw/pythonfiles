@@ -1,4 +1,4 @@
-  ############Q.1 Print N natural number #######
+  ###########Q.1 Print N natural number #######
 # n=int(input("Enter the number"))
 # i=1
 # while(i<=n):
@@ -8,9 +8,9 @@
 #         print(i)
 #     i=i+1
     
-# s="dharmendra"
+# s="Raja Raghuwanshi"
 # n=4
-# print(n*s,sep=" ")
+# print(n*s)
 
 
    ############## Q.2  SUM of N Natural Number#########
@@ -95,17 +95,17 @@
 
                      ########### Print Sum of N Even Number #########
 
-# num=int(input("Enter the number : "))
-# i=1
-# sum=0
-# while (i<=num):
-#     sum=sum+(2*i) 
-#     if i<num:
-#       print(2*i,end=' + ')
-#     else :
-#       print(2*i,end=" = ")  
-#     i=i+1
-# print(sum)
+num=int(input("Enter the number : "))
+i=1
+sum=0
+while (i<=num):
+    sum=sum+(2*i) 
+    if i<num:
+      print(2*i,end=' + ')
+    else :
+      print(2*i,end=" = ")  
+    i=i+1
+print(sum)
 
      ######### Print the even number from 1 to n ##############
 
@@ -119,7 +119,7 @@
 #       print(i)
 #     i=i+1 
 
-     ######### Print the SUM of even number from 1 to n ##############
+######### Print the SUM of even number from 1 to n ##############
      
 # n=int(input("Enter the Number : "))
 # i=1
@@ -261,3 +261,10 @@
 #            z=n
 #         else:
 #            a,b=b,z
+
+
+# n=int(input("Enter the number"))
+# i=1
+# while(i<=n):
+#     print(i,)
+#     i=i+1
